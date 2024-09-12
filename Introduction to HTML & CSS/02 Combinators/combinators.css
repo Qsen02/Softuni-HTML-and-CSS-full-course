@@ -1,0 +1,22 @@
+div p {
+    color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li {
+    list-style-type: circle;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p+p {
+    background-color: lightgray;
+}
+
+p+span {
+    font-weight: bold;
+}

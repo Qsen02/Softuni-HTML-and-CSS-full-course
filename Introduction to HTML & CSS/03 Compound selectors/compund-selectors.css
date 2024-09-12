@@ -1,0 +1,28 @@
+p.hightlighted {
+    color: lightskyblue;
+    font-size: 16pt;
+}
+
+div#container {
+    background-color: antiquewhite;
+    padding: 10px;
+}
+
+input[type="text"] {
+    border: solid 1px red;
+    padding: 5px;
+}
+
+.blue.bold {
+    color: blue;
+    font-weight: bold;
+}
+
+a {
+    display: block;
+}
+
+a[href="#"]#double {
+    color: brown;
+    text-decoration: none;
+}
