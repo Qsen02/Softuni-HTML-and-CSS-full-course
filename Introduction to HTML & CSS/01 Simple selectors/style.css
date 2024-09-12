@@ -1,0 +1,32 @@
+h1 {
+    color: grey;
+}
+
+p {
+    font-size: 14pt;
+}
+
+.highlight {
+    background-color: green;
+    padding: 5px;
+}
+
+#special-paragraph {
+    font-style: italic;
+}
+
+#main-title {
+    color: red;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+li {
+    color: blue;
+}
+
+div {
+    background-color: aqua;
+}
