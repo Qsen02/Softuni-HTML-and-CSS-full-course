@@ -1,0 +1,11 @@
+article header p {
+    color: silver;
+}
+
+article header p>time {
+    font-style: italic;
+}
+
+article header p>span {
+    font-weight: bold;
+}
