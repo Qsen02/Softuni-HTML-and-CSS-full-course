@@ -1,0 +1,38 @@
+div>p {
+    color: darkblue;
+}
+
+ul.nav-links li {
+    list-style-type: square;
+}
+
+p+p {
+    background-color: bisque;
+}
+
+p+span {
+    font-weight: bolder;
+}
+
+h1>span {
+    font-weight: bold;
+    color: brown;
+}
+
+footer ul li img {
+    width: 300px;
+    height: 300px;
+}
+
+a[id="bold-link"] {
+    font-weight: bold;
+}
+
+ul li:last-child a {
+    font-style: italic;
+}
+
+footer ul::before {
+    content: "Begin";
+    background-color: greenyellow;
+}

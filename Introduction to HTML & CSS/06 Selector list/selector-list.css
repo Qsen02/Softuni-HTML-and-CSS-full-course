@@ -1,0 +1,39 @@
+h1,
+h2,
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+section,
+footer {
+    border: solid 2px lightgrey;
+    margin: 10px;
+    padding: 10px;
+}
+
+nav ul {
+    display: block;
+    margin-left: -30px;
+}
+
+nav ul li,
+nav ul li a {
+    display: inline-block;
+    margin-right: 10px;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 16pt;
+}
+
+nav ul li a:hover {
+    color: grey;
+}
+
+footer>p,
+footer p>span {
+    font-weight: bold;
+    color: darkgray;
+}

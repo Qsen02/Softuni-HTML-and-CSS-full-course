@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="realtive-selectors.css">
+    <title>Relative selectors</title>
+</head>
+
+<body>
+    <section>
+        <p>This paragraph is a direct descendant of a section.</p>
+        <article>
+            <p>This paragraph is within an article inside the section.</p>
+        </article>
+        <article class="hightlighted">
+            <p>This paragraph is within a hightlighted article.</p>
+        </article>
+        <article>
+            <p>This paragraph is in an article following a hightlighted article.</p>
+        </article>
+        <ul class="no-links-ul">
+            <li>List item 1</li>
+            <li>List item 2</li>
+            <li>List item 3</li>
+            <li>List item with links 4:
+                <ul class="ul-links">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    <h2 class="title-out-of-section">Siblings following this h2 are styled</h2>
+    <p>Sibling paragraph</p>
+    <p>Another sibling paragraph</p>
+</body>
+
+</html>
