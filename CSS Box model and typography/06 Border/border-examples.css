@@ -1,0 +1,24 @@
+div {
+    padding: 20px;
+    margin-bottom: 20px;
+    max-width: 300px;
+}
+
+.solid {
+    border: solid 4px black;
+}
+
+.dashed {
+    border: dashed 3px #333;
+}
+
+.dotted {
+    border: dotted 2px #666;
+}
+
+.mixed {
+    border-top: 3px dashed #333;
+    border-bottom: 3px dashed #333;
+    border-left: solid 4px #000;
+    border-right: solid 4px #000;
+}
