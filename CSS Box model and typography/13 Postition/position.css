@@ -1,0 +1,30 @@
+body {
+    padding: 10px;
+}
+
+section {
+    border: 2px solid black;
+    padding: 2em;
+    position: relative;
+}
+
+.item {
+    border: 1px solid black;
+    width: 5em;
+    height: 5em;
+    padding: 0.5em;
+}
+
+.relative .item:nth-child(2) {
+    position: relative;
+    left: 5em;
+    top: 2em;
+    background: lightgreen;
+}
+
+.relative-and-absolute .item:nth-child(2) {
+    position: absolute;
+    left: 4em;
+    top: 4em;
+    background: lightgreen;
+}
