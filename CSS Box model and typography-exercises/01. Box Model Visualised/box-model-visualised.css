@@ -1,0 +1,35 @@
+.main-container {
+    width: 50vw;
+    margin: 50px auto;
+}
+
+.main-container div {
+    border: 1px dashed rgb(63, 61, 61);
+    margin: 20px;
+    font-size: 12pt;
+    font-weight: 500;
+}
+
+.main-container .margin {
+    background-color: rgb(245, 157, 99);
+}
+
+.main-container .border {
+    background-color: peachpuff;
+}
+
+.main-container .padding {
+    background-color: lightgreen;
+}
+
+.main-container div p {
+    margin: 0;
+    padding: 0;
+    padding-left: 10px;
+}
+
+.main-container .content {
+    background-color: skyblue;
+    text-align: center;
+    padding: 10px;
+}

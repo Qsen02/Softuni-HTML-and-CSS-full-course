@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    border: 2px solid green;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+    border: 2px solid blue;
+    margin: 50px auto;
+    width: 75vw;
+    padding: 40px;
+}
+
+.main-container article {
+    border: 2px solid black;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+}
+
+.main-container article:last-child {
+    margin-bottom: 0;
+}
