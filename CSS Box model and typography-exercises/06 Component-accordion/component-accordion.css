@@ -1,0 +1,19 @@
+.accordion-container {
+    width: 70vw;
+    margin: 30px auto;
+}
+
+.accordion-container details {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid silver;
+    border-bottom: none;
+    padding: 20px;
+}
+
+.accordion-container details summary {
+    font-weight: bold;
+}
+
+.accordion-container details:last-child {
+    border-bottom: 1px solid silver;
+}

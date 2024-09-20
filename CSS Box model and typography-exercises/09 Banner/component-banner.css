@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+}
+
+section {
+    position: relative;
+    background-image: url("images/image1.jpg");
+    width: 100vw;
+    height: 600px;
+    background-position: center;
+}
+
+section header {
+    position: absolute;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16pt;
+    top: 240px;
+    left: 675px;
+    text-align: center;
+    line-height: 0.5;
+}

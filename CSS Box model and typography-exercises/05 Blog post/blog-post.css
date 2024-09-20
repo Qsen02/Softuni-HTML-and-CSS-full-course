@@ -1,0 +1,29 @@
+html {
+    font-family: Lato, sans-serif;
+    line-height: 1.5;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+section {
+    width: 70vw;
+    margin: 0 auto;
+    border: 1px solid silver;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+section article {
+    width: auto;
+    margin-bottom: 55px;
+}
+
+section article:last-child {
+    margin-bottom: 0;
+}
