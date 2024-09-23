@@ -5,9 +5,27 @@
 
 .main-container div {
     border: 1px dashed rgb(63, 61, 61);
-    margin: 20px;
+    margin: 30px;
     font-size: 12pt;
     font-weight: 500;
+}
+
+.main-container .margin::before {
+    position: absolute;
+    content: "margin";
+    padding-left: 10px;
+}
+
+.main-container .padding::before {
+    position: absolute;
+    content: "padding";
+    padding-left: 10px;
+}
+
+.main-container .border::before {
+    position: absolute;
+    content: "border";
+    padding-left: 10px;
 }
 
 .main-container .margin {
