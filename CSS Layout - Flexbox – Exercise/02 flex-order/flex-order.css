@@ -1,0 +1,62 @@
+body {
+    background-color: #EEE;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    background-color: white;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.no-order>*,
+.with-order>* {
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 3px;
+}
+
+.no-order p,
+.with-order {
+    font-weight: bold;
+}
+
+.no-order header,
+.no-order footer,
+.with-order header,
+.with-order footer {
+    flex: 1 1 100%;
+}
+
+.no-order main,
+.with-order main {
+    flex-grow: 7;
+}
+
+.no-order aside,
+.with-order aside {
+    flex-grow: 3;
+}
+
+.with-order header {
+    order: 1;
+}
+
+.with-order aside {
+    order: 2;
+}
+
+.with-order main {
+    order: 3;
+}
+
+.with-order footer {
+    order: 4;
+}
