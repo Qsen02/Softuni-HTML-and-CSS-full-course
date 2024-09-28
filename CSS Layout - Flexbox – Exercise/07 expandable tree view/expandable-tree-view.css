@@ -1,42 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+p,
+ul,
+ol {
+    margin-bottom: 1.5em;
+}
+
 body {
-    font-family: Lato, sans-serif;
+    padding: 2em;
 }
 
-i {
-    color: rgb(5, 180, 5);
-    font-size: 18pt;
-    cursor: pointer;
+h1 {
+    margin-bottom: 1em;
 }
 
-i:hover {
-    color: green
+.tree {
+    --border-size: 4px;
+    --border-color: #DDD;
+    --spacing-line-vertical: 0.2em;
+    --radius: 8px;
 }
 
-.type-planet {
+.tree li,
+.tree summary {
+    line-height: 1.2;
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex: 1 1 auto;
 }
 
-.type-planet>div,
-.planet-items>div {
+.tree li {
+    padding: var(--spacing-line-vertical) 0;
+}
+
+.tree ul {
+    padding-top: var(--spacing-line-vertical);
+    padding-left: 0;
+}
+
+.tree ul li {
+    border-left: var(--border-size) solid var(--border-color);
     display: flex;
     align-items: center;
-    gap: 5px;
+    margin-left: 0.25em;
 }
 
-.planet-items {
+.tree ul li:last-child {
+    border-color: transparent;
+}
+
+.tree ul li:before {
+    content: "";
+    order: -2;
+    display: block;
+    align-self: flex-start;
+    flex: 0 0 1.4em;
+    width: 1.4em;
+    height: 1.1em;
+    border: solid var(--border-color);
+    border-width: 0 0 var(--border-size) var(--border-size);
+    position: relative;
+    top: -0.5em;
+    left: calc( var(--border-size) * -0.91);
+}
+
+.tree ul li:last-child:before {
+    border-bottom-left-radius: 0.5em;
+}
+
+.tree summary {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    cursor: pointer;
+    align-items: center;
 }
 
-ul li {
-    list-style: none;
-    font-weight: bold;
+.tree summary::marker {
+    display: none;
 }
 
-div>i,
-div>li {
-    display: inline;
+.tree summary:focus {
+    outline: none;
+}
+
+.tree summary:focus-visible {
+    outline: 1px dotted #000;
+}
+
+.tree summary::before {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    order: -1;
+    flex: 0 0 1.4em;
+    width: 1.4em;
+    height: 1.4em;
+    font-size: 1rem;
+    line-height: 1;
+    border-radius: 50%;
+    background: #ddd;
+    margin-right: 0.4em;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: -0.3em;
+}
+
+.tree summary::before {
+    content: "+";
+    background-color: #696;
+    z-index: 1;
+    color: #fff;
+    line-height: calc(2 * var(--radius) - 2px);
+    text-align: center;
+}
+
+.tree details {
+    flex: 1 1 auto;
+}
+
+.tree details[open]>summary::before {
+    content: "-";
 }

@@ -1,0 +1,27 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Lato, sans-serif;
+    font-weight: bold;
+}
+
+.container {
+    width: 97vw;
+    height: 40vw;
+    border: 3px solid green;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+header,
+main,
+footer {
+    border: 3px solid blue;
+    padding: 30px;
+}
+
+main {
+    flex-grow: 7;
+}
