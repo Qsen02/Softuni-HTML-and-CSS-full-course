@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-color: #EEE;
+    font-family: Lato, sans-serif;
+}
+
+.container {
+    width: 75vw;
+    background-color: rgb(231, 231, 231);
+    margin: 150px auto;
+    border-radius: 10px;
+    padding: 30px;
+    border-top: 1px solid silver;
+    border-left: 2px solid silver;
+    border-right: 2px solid silver;
+    border-bottom: 5px solid silver;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.row-14,
+.row-12,
+.row-7 {
+    flex: 0 0 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.row-7>button,
+.row-12>button,
+.row-14>button {
+    flex-grow: 1;
+}
+
+.row-7>.space {
+    flex-grow: 6;
+}
+
+.row-12>.double-size-shift {
+    flex-grow: 2;
+}
+
+.enter {
+    position: relative;
+    flex-grow: 1;
+    background-color: rgb(238, 234, 234);
+    border-left: 2px solid rgb(213, 211, 211);
+    border-right: 2px solid rgb(213, 211, 211);
+    border-bottom: 5px solid rgb(213, 211, 211);
+    border-radius: 7px;
+    height: 78px;
+    width: 18px;
+    margin-top: -28px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+button {
+    background-color: white;
+    border-top: 1px solid rgb(213, 211, 211);
+    border-left: 2px solid rgb(213, 211, 211);
+    border-right: 2px solid rgb(213, 211, 211);
+    border-bottom: 5px solid rgb(213, 211, 211);
+    border-radius: 7px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+.lightgrey {
+    background-color: rgb(238, 234, 234);
+}
+
+button:hover,
+.enter:hover {
+    background-color: grey;
+}
