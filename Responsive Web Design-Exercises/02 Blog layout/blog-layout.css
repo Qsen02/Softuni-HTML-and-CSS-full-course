@@ -1,4 +1,6 @@
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -20,7 +22,7 @@ body {
 .container {
     width: 95vw;
     margin: 20px auto;
-    background-color: rgb(249, 249, 249);
+    background-color: white;
     border-radius: 5px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     overflow: hidden;
@@ -28,29 +30,30 @@ body {
 
 .container header h1 {
     color: rgb(5, 197, 5);
+    background-color: rgb(249, 249, 249);
     padding: 30px;
 }
 
 .container header nav {
     background-color: rgb(68, 68, 68);
-    height: 50px;
 }
 
 .container header nav ul {
-    height: 50px;
     display: flex;
-    align-items: center;
-    gap: 20px;
-    justify-content: space-around;
 }
 
 .container header nav ul li {
+    flex: 1 0 auto;
     list-style: none;
 }
 
+.container header nav ul li a {
+    display: block;
+    padding: 20px;
+}
+
 main {
-    background-color: white;
-    padding: 10px 30px 30px 30px;
+    padding: 30px;
     display: flex;
     gap: 20px;
 }
@@ -59,10 +62,16 @@ main div h2 {
     color: rgb(68, 68, 68);
 }
 
+main div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 footer {
     height: 50px;
     background-color: rgb(68, 68, 68);
-    color: lightgray;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,18 +79,17 @@ footer {
 
 @media(max-width:600px) {
     .container header nav {
-        height: auto;
+        padding: 0;
     }
     .container header nav ul {
-        height: auto;
-        padding: 20px;
-        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0;
     }
     .container header nav ul li {
-        flex: 0 0 100%;
         text-align: center;
+    }
+    .container header nav ul li a {
         border-bottom: 1px solid rgb(104, 104, 104);
-        padding-bottom: 10px;
     }
     main {
         flex-direction: column;
