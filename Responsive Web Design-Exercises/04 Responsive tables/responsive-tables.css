@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEE;
+    font-family: "Lato", sans-serif;
+}
+
+section {
+    width: 95vw;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+header h1 {
+    padding: 20px 20px 0 20px;
+}
+
+section article {
+    flex: 0 0 auto;
+    border-bottom: 2px solid silver;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.second-table article p {
+    flex: 0 0 calc(100%/3);
+    padding: 20px;
+}
+
+.main-table article p:nth-child(odd) {
+    flex: 0 0 20%;
+    padding: 20px;
+}
+
+.long-item {
+    flex: 0 0 59%;
+}
+
+.table-header {
+    background-color: #EEE;
+    font-weight: bold;
+}
