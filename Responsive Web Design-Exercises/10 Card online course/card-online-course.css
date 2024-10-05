@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEE;
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    width: 95vw;
+    margin: 30px auto;
+    padding: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.container .container-items {
+    flex: 0 0 33%;
+    position: relative;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.container .container-items .course-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.container .container-items .lecture-image {
+    position: absolute;
+    top: 160px;
+    right: 0px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: cover;
+    z-index: 3;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.green {
+    background-color: rgb(3, 200, 121);
+}
+
+.banner {
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0.5;
+    color: white;
+    top: 10px;
+    right: 10px;
+}
+
+.lecture-name {
+    position: absolute;
+    padding: 10px 20px 10px 10px;
+    background-color: white;
+    font-weight: bold;
+    top: 185px;
+    right: 75px;
+    border-radius: 10px;
+    z-index: 1;
+}
