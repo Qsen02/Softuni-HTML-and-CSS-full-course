@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEE;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 95vw;
+    margin: 30px auto;
+    border: 2px solid silver;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container header {
+    width: 95%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.container .event:nth-child(odd) {
+    position: relative;
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container .event:nth-child(even) {
+    position: relative;
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.event article {
+    flex: 0 0 45.47%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    line-height: 1.5;
+}
+
+.container .event:nth-child(odd) article {
+    text-align: right;
+}
+
+.container .event:nth-child(even) article {
+    text-align: left;
+}
+
+.container .event:nth-child(even)::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: orange;
+    position: absolute;
+    left: 48%;
+    top: 20px
+}
+
+.container .event:nth-child(odd)::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 5px solid white;
+    border-radius: 50%;
+    background-color: rgb(3, 211, 3);
+    position: absolute;
+    left: 48%;
+}
+
+.timeline {
+    position: absolute;
+    height: 96%;
+    width: 2px;
+    background-color: silver;
+    left: 49.6%;
+    top: 50px;
+    z-index: -1;
+}
+
+@media(max-width:1200px) {
+    .timeline {
+        height: 96.8%;
+        left: 50.5%;
+    }
+}
+
+@media(max-width:800px) {
+    .event article {
+        flex: 0 0 40%;
+    }
+    .container .event:nth-child(odd)::after {
+        left: 45%;
+    }
+    .container .event:nth-child(even)::before {
+        left: 45%;
+    }
+    .timeline {
+        height: 97.6%;
+        left: 49%;
+    }
+}
