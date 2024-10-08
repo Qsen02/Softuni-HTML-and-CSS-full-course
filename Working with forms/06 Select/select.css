@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+}
+
+body,
+input,
+textarea,
+select,
+option {
+    font-style: inherit;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+select {
+    display: inline-block;
+    padding: 0.5em, 0.8em;
+    border: 2px solid #ccc;
+    border-radius: 0.3em;
+    margin-top: 10px;
+}
+
+select:focus {
+    background-color: #EEE;
+}
+
+label {
+    font-weight: bold;
+}
