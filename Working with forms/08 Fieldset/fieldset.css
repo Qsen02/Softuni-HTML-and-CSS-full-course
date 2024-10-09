@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2em;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+}
+
+body,
+input,
+textarea,
+select,
+option {
+    font-style: inherit;
+}
+
+h2 {
+    margin-top: 2em;
+}
+
+p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form {
+    margin-top: 20px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    outline: none;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+}
+
+input:focus {
+    border-color: #090;
+}
+
+input::placeholder {
+    font-family: "Lato", sans-serif;
+    padding: 5px;
+}
+
+fieldset {
+    padding: 2em;
+    border: 2px solid #ccc;
+    max-width: 50ch;
+}
+
+fieldset legend {
+    padding: 0.1em;
+    font-weight: bold;
+}
+
+fieldset label {
+    font-weight: bold;
+}
+
+div {
+    padding-bottom: 1.5em;
+}
