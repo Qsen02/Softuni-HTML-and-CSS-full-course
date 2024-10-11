@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Floating labels</title>
+</head>
+
+<body>
+    <form class="loginForm">
+        <h1>Login</h1>
+        <fieldset>
+            <legend>Login information</legend>
+            <p class="fields">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <span>example: john.doe@gmail.com</span>
+            </p>
+            <p class="fields">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <span>minimum 6 characters, letters and numbers, at least 1 special character</span>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Additional information</legend>
+            <p class="fields">
+                <label for="date">Date of Birth</label>
+                <input type="date" id="date" name="date">
+                <span>example: 16.07.2024</span>
+            </p>
+        </fieldset>
+        <input type="submit" value="Login">
+    </form>
+</body>
+
+</html>
