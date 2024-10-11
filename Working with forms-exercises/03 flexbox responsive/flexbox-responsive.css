@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EEE;
+    font-family: "Lato", sans-serif;
+}
+
+.subscribeForm {
+    width: 700px;
+    background-color: white;
+    padding: 20px;
+    margin: 200px auto;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    display: flex;
+    gap: 20px;
+}
+
+input {
+    height: 50px;
+    border: none;
+    background-color: #EEE;
+    padding-left: 15px;
+    border-radius: 5px;
+    font-size: 12pt;
+}
+
+input::placeholder {
+    color: darkgray;
+    font-weight: bold;
+    font-size: 12pt;
+}
+
+input[type="submit"] {
+    background-color: orange;
+    padding-left: 0;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12pt;
+    flex-grow: 2;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(207, 137, 8);
+}
+
+input[type="text"] {
+    flex-grow: 2;
+}
+
+input[type="email"] {
+    flex-grow: 6;
+}
+
+@media(max-width:600px) {
+    .subscribeForm {
+        width: 500px;
+        flex-wrap: wrap;
+    }
+    input[type="submit"] {
+        flex-grow: 0;
+        flex: 0 0 100%;
+    }
+    input[type="text"] {
+        flex: 0 0 30%;
+    }
+    input[type="email"] {
+        flex: 0 0 50%;
+    }
+}
+
+@media(max-width:400px) {
+    .subscribeForm {
+        width: 300px;
+        flex-wrap: wrap;
+    }
+    input[type="submit"],
+    input[type="text"],
+    input[type="email"] {
+        flex: 0 0 100%;
+    }
+}
