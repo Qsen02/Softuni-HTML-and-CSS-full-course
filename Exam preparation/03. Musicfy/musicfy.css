@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat';
+}
+
+p,
+a {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-navigation {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+.header-navigation img {
+    height: 50px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+.header-navigation nav ul {
+    display: flex;
+    gap: 15px;
+}
+
+.header-navigation nav ul li {
+    list-style: none;
+}
+
+.header-navigation nav ul li a {
+    color: white;
+    font-size: 16pt;
+    padding: 10px;
+}
+
+.header-navigation nav ul li a:hover {
+    color: lightgray;
+}
+
+.header-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-content-heading {
+    padding: 40px;
+    height: 300px;
+    background-color: rgb(8, 213, 76);
+}
+
+.header-content-heading h1 {
+    text-align: center;
+    color: white;
+    font-size: 16pt;
+}
+
+.header-content-heading img {
+    width: 550px;
+    margin-left: -40px;
+}
+
+.header-content-wrapper {
+    position: absolute;
+    top: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-left: 300px;
+}
+
+.header-content-wrapper .header-content-item {
+    flex: 0 0 35%;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.header-content-wrapper .header-content-item h1 {
+    text-align: center;
+    font-size: 16pt;
+    opacity: 0.7;
+    padding: 20px;
+}
+
+.header-content-wrapper .header-content-item ul li p {
+    opacity: 0.5;
+}
+
+.header-content-wrapper .header-content-item ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 40px 20px 50px;
+}
+
+.header-content-wrapper .header-content-item a {
+    text-align: center;
+    padding: 10px;
+    border-radius: 30px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 10px;
+    background-color: rgb(8, 213, 76);
+    color: white;
+}
+
+.header-content-wrapper .header-content-item div {
+    position: relative;
+    background-color: black;
+    color: white;
+    font-size: 14pt;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 20px;
+}
+
+.header-content-wrapper .header-content-item:nth-child(1) div p:nth-child(1)::after {
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    content: "";
+    background-color: white;
+    width: 1px;
+    height: 40px;
+}
