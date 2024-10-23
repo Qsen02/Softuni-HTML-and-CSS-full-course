@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    font-family: "Roboto", sans-serif;
+}
+
+.header-container {
+    background: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("assets/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    border-bottom: 7px solid rgb(56, 56, 56);
+}
+
+.limit-container {
+    width: 1200px;
+    color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-section {
+    height: 600px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 870px;
+}
+
+.navigation img {
+    height: 50px;
+}
+
+.navigation button {
+    background-color: red;
+    width: 75px;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12pt;
+    border: none;
+    cursor: pointer;
+}
+
+.header-content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 40pt;
+}
+
+.header-content h2 {
+    font-weight: 400;
+}
+
+.header-content form {
+    display: flex;
+    gap: 0;
+    justify-content: center;
+}
+
+.header-content form input {
+    width: 400px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+.header-content form input::placeholder {
+    color: darkgray;
+}
+
+.header-content form button {
+    background-color: red;
+    color: white;
+    width: 200px;
+    font-size: 14pt;
+    border: none;
+    cursor: pointer;
+}
+
+.enjoy-container {
+    color: white;
+    border-bottom: 7px solid rgb(56, 56, 56);
+}
+
+.enjoy-container>div {
+    width: 1200px;
+    padding: 100px;
+    margin: 0 auto;
+    display: flex;
+    gap: 100px;
+}
+
+.enjoy-container div div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.enjoy-container div div h1,
+.show-container div div h1 {
+    font-size: 30pt;
+}
+
+.enjoy-container div div p,
+.show-container div div p {
+    font-size: 18pt;
+}
+
+.enjoy-container div img {
+    width: 500px;
+    height: 300px;
+}
+
+.show-container {
+    color: white;
+    border-bottom: 7px solid rgb(56, 56, 56);
+}
+
+.show-container>div {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 100px;
+    display: flex;
+    gap: 200px;
+}
+
+.show-container div div {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.show-container div img {
+    height: 400px;
+}
